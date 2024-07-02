@@ -10,6 +10,7 @@ app.use(cookieparser())
 
 // Allow to Receive  aReques to the Frontend
 const cors = require('cors');
+
 // using Cors for Prodcution
 // app.use(cors({ origin: 'http://localhost:3000', credentials: true }))
 
