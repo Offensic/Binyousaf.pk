@@ -24,27 +24,20 @@ function AdminPanel(props) {
 
       console.log(response)
       if (response.data == "Token Not Found") {
-        
         navigate('/login')
-
       }
-
-
       else if (response.data == "Invalid Signature") {
         navigate('/Unauthorize')
-
       }
 
       else {
         setcategory(response.data)
       }
     })
-
       .catch(err => {
         console.log("Failed to get ALl product" + err)
         console.log(err)
       })
-
 
   }, [])
 
