@@ -1,0 +1,10 @@
+
+# Ignoreing Folder inside Backend directory
+/Backend/node_modules
+/Backend/.env
+/Backend/.gitignore
+
+
+# Ignoreing Folder that inside Frontend directory
+/Frontend/node_modules
+/Frontend/.gitignore

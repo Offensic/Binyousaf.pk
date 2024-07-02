@@ -1,0 +1,140 @@
+body {
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: #bb7b1c;
+    color: white;
+}
+
+
+a {
+    text-decoration: none
+}
+
+.cartIcon::after {
+    content: attr(current-count);
+    width: 60px;
+    height: 60px;
+    background-color: red;
+
+
+}
+
+
+#placesmall::placeholder {
+    font-size: 15px;
+    color: #333333;
+}
+
+
+.active {
+    color: #bb7b1c;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+
+/* Magnifier Zoom effect 3 */
+.image {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.image img {
+    overflow: hidden;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-position: center;
+    transform-origin: center;
+    object-fit: cover;
+    transform: scale(var(--zoom, 1));
+    transform: scale(var(--zoom, 1));
+    transform-origin: var(--x, 50%) var(--y, 50%);
+    transition: transform 0.3s ease;
+    flex-direction: column;
+}
+
+
+
+.image:hover img {
+    --zoom: 3;
+
+}
+
+
+
+
+
+/* Code for the Order pop UP */
+.fade-in-down {
+    animation: FadeinDown 0.5s ease;
+}
+
+@keyframes FadeinDown {
+
+    0% {
+
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.iconbox {
+    opacity: 0;
+    margin-top: -50px;
+    transition: 0.5s ease all;
+
+}
+
+
+.Mainimage:hover +  .iconbox {
+    opacity: 1;
+}
+
+
+
+
+/* Animatoion for the Loader */
+#loading{
+    /* animation: rotate;
+    animation-duration: 1s;
+    animation-timing-function: ease all;
+    animation-iteration-count: infinite; */
+    animation: rotate 2s linear infinite;
+
+    
+
+}
+
+
+@keyframes rotate {
+
+    0%{
+        transform:  rotate(0deg);
+    }
+
+    100%{
+
+        transform: rotate(360deg);
+    }
+
+}
