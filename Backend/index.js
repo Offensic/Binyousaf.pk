@@ -11,10 +11,10 @@ app.use(cookieparser())
 // Allow to Receive  aReques to the Frontend
 const cors = require('cors');
 // using Cors for Prodcution
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }))
+// app.use(cors({ origin: 'http://localhost:3000', credentials: true }))
 
 // using Cors for Deployment
-// app.use(cors({ origin: 'https://binyousaf-pk.vercel.app', credentials: true }))
+app.use(cors({ origin: 'https://binyousaf-pk.vercel.app', credentials: true }))
 
 // Allow to send Data in Body
 const bodyParser = require('body-parser')
