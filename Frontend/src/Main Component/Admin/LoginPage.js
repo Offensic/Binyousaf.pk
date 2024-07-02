@@ -30,7 +30,6 @@ function LoginPage() {
 
 
         axios.get(`${process.env.REACT_APP_Backend_URL}admin/get/setregisterbutton`, {
-
             withCredentials: true
         }).then(response => {
 
@@ -140,9 +139,7 @@ function LoginPage() {
 
         e.preventDefault();
         axios.post(`${process.env.REACT_APP_Backend_URL}Owner/admin/login`, { email, password }, {
-
             withCredentials: true
-
         }).then((response) => {
             // console.log(response.data)
             if (response.data.status === "Successfully Login") {
@@ -150,14 +147,14 @@ function LoginPage() {
                     closeOnClick: true,
                     autoClose: 2000,
                     pauseOnHover: false,
-
                 })
                 // setStoretoken(response.data.token)
 
+                console.log(response)
                 Cookies.set('token', response.data.token, {
                     expires: 1,
-                    secure: false,
-                    sameSite: 'strict',
+                    secure: true, // secure flag tell cookies send on https or not
+                    sameSite: 'None', // it is to allowed  cookies on different origin 
                     // httpOnly: true,
 
                 })

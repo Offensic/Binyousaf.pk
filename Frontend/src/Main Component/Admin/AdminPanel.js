@@ -19,12 +19,10 @@ function AdminPanel(props) {
   //-------------------------------------------------------------- Requesting to the API for getting all Categroy data 
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_Backend_URL}admin/product/Category`, {
-
       withCredentials: true
-
     }).then(response => {
 
-
+      console.log(response)
       if (response.data == "Token Not Found") {
         
         navigate('/login')

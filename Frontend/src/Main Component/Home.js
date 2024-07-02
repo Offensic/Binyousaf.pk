@@ -20,9 +20,9 @@ function Home() {
 
             var UserIpAddress = response.data
             localStorage.setItem('Ip', UserIpAddress)
-           
-                axios.post(`${process.env.REACT_APP_Backend_URL}user/Ipaddress`, { UserIpAddress })
-           
+
+            axios.post(`${process.env.REACT_APP_Backend_URL}user/Ipaddress`, { UserIpAddress })
+
         }).catch(err => console.log(err))
 
 
