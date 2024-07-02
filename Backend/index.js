@@ -15,7 +15,25 @@ const cors = require('cors');
 // app.use(cors({ origin: 'http://localhost:3000', credentials: true }))
 
 // using Cors for Deployment
-app.use(cors({ origin: 'https://binyousaf-pk.netlify.app', credentials: true }))
+// app.use(cors({ origin: 'https://binyousaf-pk.vercel.app', credentials: true }))
+
+
+
+// For Deployment Alloed Multiple Url to Receive the Request 
+const ALlowedUrl = ['https://binyousaf-pk.vercel.app', 'https://binyousaf-pk.netlify.app']
+
+const corsOptions = {
+    origin: function (origin, callback) {
+        if (ALlowedUrl.indexOf(origin) !== -1 || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    credentials: true
+};
+app.use(cors(corsOptions),);
+
 
 // Allow to send Data in Body
 const bodyParser = require('body-parser')
