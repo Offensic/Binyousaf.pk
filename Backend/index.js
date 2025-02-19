@@ -50,10 +50,10 @@ dotenv.config({ path: '.env' });
 
 
 
-// Path for the  server Checking
-app.use('/checkingserver', (req, res, ) => {
-        res.send('Binyousaf Server is working Hello')
-})
+        // Path for the  server Checking
+        app.use('/checkingserver', (req, res, ) => {
+                res.send('Binyousaf Server is working Hello')
+        })
 
 // Path for the Products
 const CategoryRoutes = require('./Route/CategoryRoute')
@@ -121,26 +121,9 @@ function ValidateAdmin(req, res, next) {
 
 
 
-// const sslServer = https.createServer({
-
-//    key: '',
-//    cert: '',
-
-
-// }, app)
-
-
-// sslServer.listen(process.env.PORT,  () => {
-
-//         console.log("Your Port is working on", process.env.PORT)
-
-
-// })
 
 app.listen(process.env.PORT, () => {
-
         console.log("Your Port is working on", process.env.PORT)
-
 })
 
 
