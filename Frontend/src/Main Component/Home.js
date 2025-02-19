@@ -34,9 +34,9 @@ function Home() {
             {/* Disclaimer Note: */}
             <div className="w-[250px] text-white bg-black px-3 py-4 z-[1000] fixed right-5 bottom-10 rounded-md">
                 <p>Note: 👇</p>
-                <p className="text-sm tracking-wide text-white ">
+                <p className="text-sm tracking-wide ">
                     This site is a cloned project for showcasing my skills.
-                    <a href="https://ochi.design/" target="_blank" className="text-white  cursor-pointer hover:text-orange-300">
+                    <a href="https://binyousaf.pk/" target="_blank" className="cursor-pointer hover:text-orange-300">
                         Visit the original site
                     </a>
                 </p>
