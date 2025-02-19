@@ -32,7 +32,7 @@ function Home() {
     return (
         <div className='overflow-hidden relative'>
             {/* Disclaimer Note: */}
-            <div className="w-[250px] text-white bg-black px-3 py-4 z-[1000] fixed right-5 bottom-10 rounded-md">
+            <div className="w-[250px] text-white bg-black px-3 z-[1000] fixed right-5 bottom-10 rounded-md">
                 <p>Note: 👇</p>
                 <p className="text-sm tracking-wide text-white ">
                     This site is a cloned project for showcasing my skills. Visit the original site 
