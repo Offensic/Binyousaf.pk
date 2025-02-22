@@ -20,7 +20,7 @@ const cors = require('cors');
 
 
 // For Deployment Alloed Multiple Url to Receive the Request 
-const ALlowedUrl = ['https://binyousaf-pk.vercel.app', 'https://binyousaf-pk.netlify.app']
+const ALlowedUrl = ['https://binyousaf-pk.vercel.app', 'https://clone-binyousaf-pk.netlify.app/']
 
 const corsOptions = {
     origin: function (origin, callback) {
