@@ -35,10 +35,15 @@ function Home() {
             <div className="w-[250px] text-white bg-black px-3 py-2 z-[1000] fixed right-5 bottom-10 rounded-md">
                 <p>Note: 👇</p>
                 <p className="text-sm tracking-wide text-white ">
-                    This site is a cloned project for showcasing my skills. Visit the original site 
+                    This site is a cloned project for showcasing my skills. Visit the original site
                     <a href='https://binyousaf.pk/' target="_blank" className="pl-1  cursor-pointer hover:text-orange-300">
-                          Binyousaf.pk
+                        Binyousaf.pk
                     </a>
+                    <br />
+                    <a href='https://www.linkedin.com/in/zia-been/' target="_blank" className="pl-1  cursor-pointer hover:text-orange-300">
+                        Who made this !
+                    </a>
+
                 </p>
             </div>
 
